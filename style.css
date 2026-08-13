@@ -1,0 +1,25 @@
+/* Custom colors for the brand */
+:root {
+    --brand-orange: #FF6600;
+    --brand-black: #1A1A1A;
+}
+
+/* Smooth scrolling when clicking links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom font for headings */
+h1, h2, h3, h4, h5 {
+    font-family: 'Arial Black', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-brand-black antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
